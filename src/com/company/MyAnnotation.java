@@ -6,4 +6,6 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Inherited
 public @interface MyAnnotation {
+    String name() default "mao";
+    int age() default 18;
 }
