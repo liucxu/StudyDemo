@@ -1,6 +1,5 @@
 package com.company;
 
-import com.oracle.tools.packager.Log;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;

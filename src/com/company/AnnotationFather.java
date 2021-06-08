@@ -1,5 +1,5 @@
 package com.company;
 
-@MyAnnotation
+@MyAnnotation(name = "sqliu",age = 2)
 public class AnnotationFather {
 }
