@@ -16,7 +16,7 @@ public class TypeEraser {
             Method method=list2.getClass().getMethod("add", Object.class);
             method.invoke(list2,"abc");
             for(int index=0;index<list2.size();index++){
-                System.out.println(list2.get(index));
+                System.out.println(list2.get(index).returnString());
             }
         } catch (NoSuchMethodException e) {
             e.printStackTrace();

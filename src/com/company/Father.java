@@ -29,6 +29,10 @@ public class Father {
         return true;
     }
 
+    public String returnString(){
+        return "Father";
+    }
+
     @Override
     public int hashCode() {
         return this.x*10+this.y*5+this.z*2;
