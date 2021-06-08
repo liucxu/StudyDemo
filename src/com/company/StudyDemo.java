@@ -1,3 +1,5 @@
+package com.company;
+
 public class StudyDemo {
     static{
         System.out.println("123");

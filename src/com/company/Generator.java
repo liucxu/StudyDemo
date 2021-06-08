@@ -1,3 +1,5 @@
+package com.company;
+
 public class Generator <T extends Number> {
     private T key;
     public Generator(T key){

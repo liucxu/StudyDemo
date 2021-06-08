@@ -1,3 +1,5 @@
+package com.company;
+
 public class MainTest {
     public static void main(String[] args){
         Generator<Number> numberGenerator=new Generator<>(123);
