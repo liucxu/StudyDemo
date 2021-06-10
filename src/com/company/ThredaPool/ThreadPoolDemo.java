@@ -6,6 +6,13 @@ import java.util.concurrent.TimeUnit;
 
 import static java.util.concurrent.TimeUnit.*;
 
+/**
+ * 一般需要根据任务的类型来配置线程池大小：
+ *
+ * 如果是CPU密集型任务，就需要尽量压榨CPU，参考值可以设为 NCPU+1
+ *
+ * 如果是IO密集型任务，参考值可以设置为2*NCPU
+ */
 public class ThreadPoolDemo {
     public static void main(String[] args){
         ThreadPoolExecutor threadPoolExecutor=new ThreadPoolExecutor(5,10,200, MINUTES,new ArrayBlockingQueue<Runnable>(5));
